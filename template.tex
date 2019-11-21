@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{cv_pic} % Profile picture
+
+\cvname{Benjamin Schmidt} % Your name
+\cvjobtitle{M. Sc. Researcher} % Job title/career
+
+\cvdate{20 August 1988} % Date of birth
+\cvaddress{Kaiserin-Augusta-Allee 43 \newline 10589 Berlin} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+49 (0) 173 9145137} % Phone number
+\cvsite{github.com/benatouba/} % Personal website
+\cvmail{benschmidt@live.de} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Bash/4},{MATLAB/2},{LaTeX/3},{R/5},{Python3 (Scientific)/5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\langs{{French/2},{English/4},{German/6}}
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\interests{{Computer programming}
+\newline 
+{Hiking}
+\newline
+{Sports}
+\newline
+{Music}
+\newline
+{Photography}
+}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+%	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\newline
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{08/19-present}{Technische Universität zu Berlin}{Research Assistant}{
+	\textbf{Chair:} Climatology
+	\newline 
+	\textbf{Project:} Q-TiP - Quaternary Tipping Points of Lake Systems in the Arid Zone of Central Asia.
+	\newline
+	\textbf{Tasks:} Downscaling and analysis of present day and pliocene climatological data using The Weather and Research Forecast Model and Python.
+	\newline}
+	\twentyitem{10/19-present}{Freie Universität zu Berlin}{Lecturer}{
+	\textbf{Chair:} Applied Physical Geography\newline
+	\textbf{Subjects: Introduction to statistics, Statistics with R} 
+	\newline}
+	\twentyitem{02/19-07/19}{Potsdam Institute for Climate Impact Research}{Research Assistent}{
+	\textbf{Group:} ISIMIP\newline
+	\textbf{Project:} ISI-CFACT: Producing counterfactual climatological data from past datasets for the ISIMIP project.\newline
+	\textbf{Tasks:} Construction and application of an algorithm to construct counterfactual climate from large datasets in Python.
+	\newline}
+	\twentyitem{02/17-01/19}{Humboldt-Universität zu Berlin}{Student collaborator}{
+	\textbf{Chair:} Climate Geography\newline
+	\textbf{Project:} Hitzewellen in Berlin – Klimaprojektionen: Untersuchung der räumlichen und zeitlichen Variation der Hitzebelastung in Berlin.
+	\newline
+	\textbf{Tasks:} Application of meso scale climate model COSMO-CLM, with the urban canopy layer "Double Canyon Energy Parameterization" scheme. Assistance with data acquisition and analysis.
+	\newline}
+	\twentyitem{08/15-09/16}{Christian-Albrechts Universität zu Kiel}{Student collaborator}{
+	\textbf{Chair:} Geophysics\newline
+	\textbf{Project:} BORA - Berechnung von Offshore-Rammschall\newline
+	\textbf{Tasks:} Assistance with analysis of data signals using MATLAB and setup for data acquisition.
+	\newline}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	%\twentyitem{since 1865}{Ph.D. {\normalfont candidate in Computer Science}}{Wonderland}{\emph{A Quantified Theory of Social %Cohesion.}}
+	\twentyitem{10/16-03/19}{Humboldt-Universität zu Berlin}{Grade: 1.2}{Master of Science in Global Change Geography - The Physical Geography of Human-Environment Systems. \newline \newline This master degree program examines current research questions, approaches and insights regarding the interactions between environment and society in the context of global change. 
+	\newline
+	Extra Courses: Arctic Seismic Exploration at UNIS - University Centre in Svalbard
+	\newline
+	}
+	\twentyitem{10/11-09/16}{Christian-Albrechts-Universität zu Kiel}{Grade: 2.2}{Bachelor of Science in Physics of the Earth's System - Meteorology, Oceanograpy, Geophysics. \newline \newline A bachelor program covering the physical geosciences taught in equals parts by CAU Kiel and GEOMAR - Helmholtz Centre for Ocean Research Kiel.\newline}
+	\twentyitem{08/95-06/08}{Freie Waldorfschule Flensburg}{Grade: 1.8}{A levels/Abitur - Specialising in mathematics and geography. 
+	\newline
+	International experience: A semester abroad in Pretoria, Republic of South Africa}
+	%\twentyitem{<dates>}  {} {<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
