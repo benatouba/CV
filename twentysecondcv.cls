@@ -177,7 +177,7 @@
 		\skills
 		%\scriptsize
 		
-		\profilesection{Languages*}
+		\profilesection{Languages**}
 		\langs
 		%\scriptsize
 			
