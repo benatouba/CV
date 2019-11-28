@@ -84,12 +84,33 @@
 	\renewcommand{\skills}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
-				\node [above right] at (0,\i+0.4) {\x};
+				\node [above right] at (0,\i) {\x};
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-				\draw[step=1cm, arsenic, thick] (0.02,\i) grid (6.02, \i+.4);
+				\draw[step=1cm, thick] (0.02,\i) grid (6.02, \i+.4);
 			}
 		\end{tikzpicture}
+	}
+}
+
+% Command for printing skill progress bars
+\newcommand\skillslogo[1]{
+	\renewcommand{\skillslogo}{
+        \foreach \picname in {#1}{
+            \includegraphics[width =  2.6cm]{\picname}
+            \hspace{.5cm}
+            \vspace{.3cm}
+        }
+	}
+}
+
+\newcommand\skillslogosmall[1]{
+	\renewcommand{\skillslogosmall}{
+        \foreach \picname in {#1}{
+            \vspace{.3cm}
+            \includegraphics[height = 1.2cm]{\picname}
+            \hspace{.7cm}
+        }
 	}
 }
 
@@ -100,13 +121,13 @@
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
 				\node [above right] at (0,\i+0.4) {\x};
-				\draw[step=1cm, arsenic, thick] (0.02,\i) grid (6.02, \i+.4);
+				\draw[step=1cm, thick] (0.02,\i) grid (6.02, \i+.4);
 			}
 		\end{tikzpicture}
 	}
 }
 
-% Command for printing skills text
+% Command for printing interests text
 \newcommand\interests[1]{ 
 	\renewcommand{\interests}{
 	    \foreach [count=\i] \x in {#1}{
@@ -173,26 +194,27 @@
 
 		%------------------------------------------------
 
-		\profilesection{Skills*}
-		\skills
+		\profilesection{Skills}
+		%\vspace{.2cm}
+		\skillslogo
+		\vspace{.5cm}
+		\skillslogosmall
 		%\scriptsize
 		
-		\profilesection{Languages**}
+		\profilesection{Languages*}
 		\langs
 		%\scriptsize
 			
-		\profilesection{Interests}
-		\interests
-		\scriptsize
+		%\profilesection{Interests}
+		%\interests
+		%\scriptsize
 		%\vspace{11em}
 		
 		\profilesection{}
 	%	\begin{textblock*}{5cm}(10cm,6cm) % {block width} (coords)
 	    \begin{flushleft}
-            		(*)[The skill level ranges from 0 (Fundamental Awareness) to 6 (Expert).]
-            		\newline
-            		(**) [Skill level according to CEFR.]
-            		(*/**) If no certificate present, skill level is based on self assessment.]
+            		(*) [Skill level according to CEFR.]
+            		(*) If no certificate present, skill level is based on self assessment.]
         \end{flushleft}
      %   \end{textblock*}
 
